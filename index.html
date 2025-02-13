@@ -53,12 +53,13 @@
                     <h1 class="sub-title">About Me</h1>  </br>
                     <p> As a university student, I am passionate about learning and exploring new fields of knowledge. My academic focus is on Computing Science, where I’m gaining a strong foundation in programming, algorithms, and technology. Outside of my academics, I am eager to develop skills that will help me contribute to innovative solutions in the tech industry. With a strong interest in both theoretical and practical aspects of computer science, I seek to combine my academic efforts with extracurricular activities to improve my learning experience.</p>
                     <div class="tab-titles">
-                        <p class="tab-links">Voluntary Experience</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p> 
-                        <p class="tab-links">Hobbies</p> 
+                        <p class="tab-links active-link"  onclick="opentab('voluntary experience')">Voluntary Experience</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p
+                        class="tab-links" onclick="opentab('education')">Education</p> 
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p> 
                     </div> 
-                    <div class="tab-contents" id="voluntary experience">
+                    <div class="tab-contents active-tab" id="voluntary experience">
                         <ul>
                             <li><span>2024 - Present</span><br>Women in Computing Science</li>
                             <li><span>2019 - 2020</span><br>Technical team Member, Chintels School</li>
@@ -86,5 +87,23 @@
                 </div>
             </div>
         </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(let tablink of tablinks){
+                    tablink.classList.remove("active-link");
+        
+                }
+                for(let tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                    
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        
+        
+        </script>
 </body>
 </html>
