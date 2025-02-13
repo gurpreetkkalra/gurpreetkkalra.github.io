@@ -292,8 +292,16 @@ section {
     margin: 10px;
     transition: background 0.5s, transform 0.5s;
 }
+.skill-list div i{
+    font-size: 100%;
+    margin-bottom: 30px;
+}
 .skill-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+}
+.skill-list div:hover{
+    background:  #D4A5E0;
+    transform: translateY(-10px);
 }
