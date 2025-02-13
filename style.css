@@ -301,3 +301,7 @@ section {
     font-weight: 500;
     margin-bottom: 15px;
 }
+.skill-list div:hover{
+    background:  #D4A5E0;
+    transform: translateY(-10px);
+}
