@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html {
+
+    scroll-padding-top: 100px;
+}
 body
 {
     background: linear-gradient(to right, #2d1e40, #1b2838);
@@ -50,4 +54,132 @@ body
 }
 .navbar a:hover{
     color:#ffcc00;
+}
+section {
+    padding: 10px 10%;
+    scroll-margin-top: 80px; 
+    margin-bottom: 0;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 10%;
+    margin-bottom: 0;
+}
+
+.intro-text {
+    max-width: 600px;
+    margin-top: -100px;
+}
+
+.intro-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.intro-text h1 span {
+    color: #ffcc00; 
+}
+
+.intro-text p {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-top: 0;
+}
+.sfu-link{
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+.aspiring-text {
+    margin-top: 30px;         
+}
+.role {
+    color: #ffcc00;
+    line-height: 1.6;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0;
+    animation: rotateText 12s infinite;
+}
+
+/* Keyframes to rotate the text */
+@keyframes rotateText {
+    0%, 10% {
+        opacity: 1;
+        content: "Software Developer";
+    }
+
+    20%, 30% {
+        opacity: 0;
+    }
+
+    40%, 50% {
+        opacity: 1;
+        content: "Data Scientist";
+    }
+
+    60%, 70% {
+        opacity: 0;
+    }
+
+    80%, 90% {
+        opacity: 1;
+        content: "Web Designer";
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+.intro-text .btn-box{
+    width: 345px;
+    height: 50px;
+
+}
+.btn-box {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap; 
+    margin-top: 40px;
+}
+.btn-box a {
+    display: inline-block;
+    padding: 12px 30px; 
+    border: 2px solid #ffcc00; 
+    background: transparent; 
+    color: #ffcc00; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 200px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap; 
+}
+
+.btn-box a:hover {
+    background: #ffcc00; 
+    color: #1b2838;
+}
+
+.profile-container {
+    flex: 1;
+    display: flex;
+    margin-top: -100px;
+    justify-content: flex-end; 
+}
+.profile-pic {
+    width: 350px; 
+    height: auto;
+    max-height: 85vh;
+    border-radius: 10px;
+    opacity: 0.9; 
+    filter: drop-shadow(10px 10px 20px rgba(255, 255, 255, 0.2)); 
 }
