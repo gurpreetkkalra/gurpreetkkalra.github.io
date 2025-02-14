@@ -395,3 +395,6 @@ section {
     border-radius: 20%;
     background: white;
 }
+.social-icons img:hover {
+    transform: scale(1.1);
+}
