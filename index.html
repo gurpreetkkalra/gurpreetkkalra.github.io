@@ -6,9 +6,29 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href = "style.css">
     <script src="https://kit.fontawesome.com/b03580ef0c.js" crossorigin="anonymous"></script>
+    <style>
+        html{
+
+        
+            scroll-behavior: smooth;
+            }
+
+            .fade-in {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 1s ease, transform 1s ease;
+            }
+
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        
+    </style>
+    <link rel="icon" type="image/png" href="images/2.png">
 </head>
 <body>
-    <div id="header">
+    <div id="header" class="fade-in">
         <div class="logo">
             <i class="fa-solid fa-thumbtack" style="color: #ffffff;"></i>
                 GKaur.</div>
@@ -21,7 +41,7 @@
 
         </nav>
     </div>
-    <section id="home" >
+    <section id="home" class="home fade-in">
         <div class="intro-text">
             <h1>Hi, I'm <span>Gurpreet</span></h1>
             <h2>A second-year Computing Science student <a href="https://www.sfu.ca/" class="sfu-link">@SFU</a></h2>
@@ -42,43 +62,43 @@
             <img src="images/my_pic.png" alt="My Pic" class="profile-pic">
         </div>
     </section>
-    <div id="about">
+    <div id="about" class="fade-in">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1 fade-in">
                     <img src="images/sticker.png">    
                 </div>
                     
-                <div class="about-col-2">
+                <div class="about-col-2 fade-in">
                     <h1 class="sub-title">About Me</h1>  </br>
                     <p> As a university student, I am passionate about learning and exploring new fields of knowledge. My academic focus is on Computing Science, where I’m gaining a strong foundation in programming, algorithms, and technology. Outside of my academics, I am eager to develop skills that will help me contribute to innovative solutions in the tech industry. With a strong interest in both theoretical and practical aspects of computer science, I seek to combine my academic efforts with extracurricular activities to improve my learning experience.</p>
-                    <div class="tab-titles">
+                    <div class="tab-titles fade-in">
                         <p class="tab-links active-link"  onclick="opentab('voluntary experience')">Voluntary Experience</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p
                         class="tab-links" onclick="opentab('education')">Education</p> 
                         <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p> 
                     </div> 
-                    <div class="tab-contents active-tab" id="voluntary experience">
+                    <div class="tab-contents active-tab fade-in" id="voluntary experience">
                         <ul>
                             <li><span>2024 - Present</span><br>Women in Computing Science</li>
                             <li><span>2019 - 2020</span><br>Technical team Member, Chintels School</li>
 
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents fade-in" id="experience">
                         <ul>
                             <li><span>2023 - Present</span><br>Customer Service Representative, Chevron</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
+                    <div class="tab-contents fade-in" id="education">
                         <ul>
                             <li><span>2023 - Present</span><br>Computing Science, Simon Fraser University</li>
                             <li><span>May 2022</span><br>Developing Desktop and Web Applications using Java</li>
                             <li><span>2018 - 2020</span><br>High School, The Chintels School</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="hobbies">
+                    <div class="tab-contents fade-in" id="hobbies">
                         <ul>
                             <li><span>Reading Books</span><br></li>
                             <li><span>Dancing</span><br></li>
@@ -124,29 +144,29 @@
                 </div>
             </div>
         </div>
-        <div id="projects">
-            <div class="container">
+        <div id="projects" class="fade-in">
+            <div class="container fade-in">
                 <h1 class="sub-title">Projects</h1>
                 <div class="work-list">
-                    <div class="work">
+                    <div class="work fade-in">
                         <img src="images/work2.jpg">
-                        <div class="layer">
+                        <div class="layer fade-in">
                             <h3>Trivia Website</h3>
                             <p>A dynamic web-based trivia game where users can test their knowledge with multiple-choice questions</p>
                             <a href="https://github.com/orgs/CMPT-276-SPRING-2025/teams/11-stars"><i class="fa-solid fa-link" style="color: #f3f3f1;"></i></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work fade-in">
                         <img src="images/work3.jpg">
-                        <div class="layer">
+                        <div class="layer fade-in">
                             <h3>Portfolio project</h3>
                             <p>This project demonstrates my skills in HTML, CSS, and JavaScript through structured design and interactivity</p>
                             <a href="https://github.com/CMPT-276-SPRING-2025/solo-mini-project-gurpreetkkalra"><i class="fa-solid fa-link" style="color: #f3f3f1;"></i></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work fade-in">
                         <img src="images/work1.jpg">
-                        <div class="layer">
+                        <div class="layer fade-in">
                             <h3>Snake Game</h3>
                             <p>A classic snake game built using Python and Pygame, featuring smooth controls</p>
                             <a href="https://github.com/gurpreetkkalra/Snake-game"><i class="fa-solid fa-link" style="color: #f3f3f1;"></i></a>
@@ -155,13 +175,31 @@
                 </div>
             </div>
         </div>
-        <div id="contact-section">
+        <div id="contact-section" class="fade-in">
             <h1>CONTACT ME</h1>
-            <div class="social-icons">
+            <div class="social-icons fade-in">
                 <a href="https://www.linkedin.com/in/gurpreet-kaur-723999157/"><img src="images/linkedin.png" alt="LinkedIn"></a>
                 <a href="https://www.instagram.com/gurpreet.kaur18/?hl=en"><img src="images/instagram.png" alt="Instagram"></a>
                 <a href="https://x.com/gkaurkalra"><img src="images/twitter.png" alt="Twitter"></a>
             </div>
         </div>
+        <script>
+    
+            const elements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.3
+            });
+        
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        </script>
 </body>
 </html>
